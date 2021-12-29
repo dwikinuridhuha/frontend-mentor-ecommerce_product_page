@@ -1,24 +1,32 @@
 import React from "react";
+import Image from "next/image";
+
+import ImageProduct from "../images/image-product-1.jpg"
+import IconPrev from "../images/icon-previous.svg"
+import IconNext from "../images/icon-next.svg"
+import IconMinus from "../images/icon-minus.svg"
+import IconPlus from "../images/icon-plus.svg"
+import IconToCart from "../images/icon-cart.svg"
 
 export default function Main() {
   return (
     <main className="product-page">
       <div className="images-wrapper">
-        <img
-          src="./images/image-product-1.jpg"
+        <Image
+          src={ImageProduct}
           alt="product image"
           className="product--image"
         />
         <div className="next-wrapper">
-          <img
-            src="./images/icon-next.svg"
+          <Image
+            src={IconNext}
             alt="next"
             className="img--controller"
           />
         </div>
         <div className="previous-wrapper">
-          <img
-            src="./images/icon-previous.svg"
+          <Image
+            src={IconPrev}
             alt="previous"
             className="img--controller"
           />
@@ -30,7 +38,7 @@ export default function Main() {
         <h2>Fall Limited Edition Sneakers</h2>
         <p className="item-description--paragraph">
           These low-profile sneakers are your perfect casual wear companion.
-          Featuring a durable rubber outer sole, they’ll withstand everything
+          Featuring a durable rubber outer sole, they&apos;ll withstand everything
           the weather can offer.
         </p>
         <div className="price-wrapper">
@@ -45,16 +53,16 @@ export default function Main() {
         <div className="quantity-add-to-cart-wrapper">
           <div className="quantity-wrapper">
             <div className="remove-icon">
-              <img
-                src="./images/icon-minus.svg"
+              <Image
+                src={IconMinus}
                 alt="remove"
                 className="remove--icon"
               />
             </div>
             <span className="quantity--span">0</span>
             <div className="add-icon">
-              <img
-                src="./images/icon-plus.svg"
+              <Image
+                src={IconPlus}
                 alt="add"
                 className="add--icon"
               />
@@ -62,8 +70,8 @@ export default function Main() {
           </div>
           <div className="add-to-cart">
             <div className="inner-wrapper">
-              <img
-                src="./images/icon-add-to-cart.svg"
+              <Image
+                src={IconToCart}
                 alt="add to cart"
                 className="cart--icon"
               />

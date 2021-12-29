@@ -1,12 +1,17 @@
 import React from "react";
+import Image from "next/image";
+
+import IconMenu from "../images/icon-minus.svg";
+import IconCart from "../images/icon-cart.svg";
+import ImageAvatar from "../images/image-avatar.png";
 
 export default function Header() {
   return (
     <header className="header">
       <div className="hamburger-menu-wrapper">
         <div className="hamburger-menu">
-          <img
-            src="./images/icon-menu.svg"
+          <Image
+            src={IconMenu}
             alt="hamburger-menu"
             className="menu--icon"
           />
@@ -20,15 +25,15 @@ export default function Header() {
           <div className="total-items">
             <span></span>
           </div>
-          <img
-            src="./images/icon-cart.svg"
+          <Image
+            src={IconCart}
             alt="basket--icon"
             className="basket--icon"
           />
         </div>
         <div className="avatar-icon">
-          <img
-            src="./images/image-avatar.png"
+          <Image
+            src={ImageAvatar}
             alt="avatar--icon"
             className="avatar--icon"
           />

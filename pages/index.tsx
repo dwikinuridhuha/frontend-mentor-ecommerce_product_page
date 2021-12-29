@@ -1,9 +1,18 @@
 import type { NextPage } from 'next'
+import Footer from '../components/Footer'
+import Header from '../components/Header'
+import Main from '../components/Main'
+import NavBar from '../components/NavBar'
 
 const Home: NextPage = () => {
   return (
     <>
-      <h1>Hello</h1>
+      <Header />
+      <hr />
+      <NavBar />
+      <Main />
+      
+      <Footer />
     </>
   )
 }
